@@ -1,0 +1,455 @@
+/*Global*/
+a {
+  text-decoration: none;
+  font-family: 'Droid Sans';
+}
+
+p {
+  line-height: 1.4;
+  font-family: 'Droid Sans';
+}
+
+a, p {
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans';
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.faded-text {
+  color: rgba(0, 0, 0, .6);
+}
+
+/*header*/
+
+header {
+  height: 64px;
+  max-width: 100%;
+}
+
+.left-header {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+header img {
+  margin-left: 24px;
+  height: 50px;
+}
+
+#left-span, #right-span {
+  font-family: serif;
+}
+
+#left-span {
+  color: black;
+}
+
+#right-span {
+  color: grey;
+}
+
+
+.right-header {
+  display: inline-flex;
+  align-items: center;
+  float: right;
+  height: 100%;
+}
+
+.right-header nav span {
+  margin-right: 16px;
+}
+
+.right-header nav span a {
+  color: black;
+}
+
+/*landing*/
+
+.main-div {
+  display: flex;
+  max-width: 100%;
+}
+
+.landing-div {
+  background-color: rgb(209, 209, 209);
+  align-items: center;
+}
+
+.image-div {
+  width: 60%;
+  max-height: 100%;
+  padding: 32px 24px;
+  overflow: hidden;
+}
+
+.image-div img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.right-landing {
+  width: 30%;
+  margin-left: 24px;
+}
+
+.right-landing p {
+  font-size: 24px;
+  margin: 30px 0px;
+}
+
+.right-landing a {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+/*main content*/
+
+.content-div{
+  background-color: rgb(232, 232, 232);
+}
+
+.content-div {
+  padding: 0;
+}
+
+.left-content {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.content-image {
+  max-width: 100%;
+  padding: 0;
+}
+
+.content-image img, .content-image video {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.content-information h2 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.content-information p span {
+  display: block;
+  font-size: 14px;
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+.right-content {
+  border-left: 1px solid grey;
+  max-width: 36%;
+  padding-top: 16px;
+}
+
+.article-div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 16px;
+  transition-duration: 1.5s;
+}
+
+.article-div:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+.link-spanner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.article-image {
+  max-width: 35%;
+  overflow: hidden;
+}
+
+.article-image img {
+  height: auto;
+  width: 100%;
+}
+
+.article-content {
+  margin-left: 16px;
+}
+
+.article-content p {
+  margin: 8px 0;
+}
+
+.article-content p a {
+  z-index: 2;
+}
+
+/*courses*/
+
+.courses-div {
+  background-color: rgb(216, 216, 216);
+  padding-bottom: 32px;
+}
+
+.courses-div h2 {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.courses-div .main-div {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course {
+  flex-direction: column;
+  width: 25%;
+  margin-right: 32px;
+  margin-bottom: 20px;
+  padding-bottom: 24px;
+  background-color: white;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+.course-info {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: white;
+}
+
+.course-font {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/*Thesis*/
+
+.thesis-div {
+  background-color: rgb(232, 232, 232);
+}
+
+.thesis-div h2 {
+  padding: 32px 0;
+  text-align: center;
+}
+
+#left-thesis {
+  padding-right: 16px;
+  padding-top: 0;
+}
+
+#left-thesis h2 {
+  text-align: left;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+#right-thesis {
+  padding-top: 0;
+  border: 0;
+}
+
+#thesis-article {
+  max-height: 168px;
+}
+
+/*footer*/
+
+footer {
+  max-width: 100%;
+  height: 64px;
+  background-color: rgb(232, 232, 232);
+  padding-left: 24px;
+  padding-top: 10px;
+  border-top: 1px solid grey;
+}
+
+.left-footer {
+  display: inline-flex;
+}
+
+.right-footer {
+  display: inline-flex;
+  float: right;
+}
+
+.right-footer span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 471px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin-top: 5px;
+  }
+
+  .left-header, .right-header {
+    display: none;
+  }
+
+  .mobile-header {
+    height: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .mobile-header img {
+    margin: 0;
+    height: 35px;
+  }
+
+  .main-div {
+    display: block;
+  }
+
+  .right-landing {
+    width: auto;
+    padding: 0 16px 32px 16px;
+    margin: 0 0 -32px 0;
+  }
+
+  .image-div {
+    width: 100%;
+    max-height: 180px;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .right-content {
+    display: block;
+    border-left: none;
+    max-width: 100%;
+  }
+
+  .link-spanner {
+    /*im not sure whether i should leave this displayed or not, since it makes it a lot easier to click, but it looked quite awkward during debugging*/
+    display: none;
+  }
+
+  .article-div {
+    display: block;
+    padding-top: 0;
+  }
+
+  .article-div:hover {
+    background-color: rgb(232, 232, 232);
+  }
+
+  .article-image {
+    display: none;
+  }
+
+  .mobile-article-image {
+    width: 100%;
+    max-width: 100%;
+    height: 160px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .mobile-article-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .article-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .courses-div > .main-div {
+    display: none;
+  }
+
+  .mobile-course {
+    margin: 8px 16px 0 16px;
+    background-color: white;
+  }
+
+  .mobile-course a {
+    display: block;
+    padding: 16px 0 16px 16px;
+    font-weight: bold;
+    color: black;
+  }
+
+  #left-thesis {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  #left-thesis .content-information {
+    display: none;
+  }
+
+  #right-thesis {
+    display: none;
+  }
+
+  footer {
+    border-top: none;
+  }
+
+  .left-footer {
+    padding-top: 30px;
+  }
+
+  .right-footer {
+    display: none;
+  }
+
+}
